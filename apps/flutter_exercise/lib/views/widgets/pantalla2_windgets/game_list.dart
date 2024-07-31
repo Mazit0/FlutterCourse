@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/game_class.dart';
+import 'package:flutter_exercise/game_class.dart';
+
 
 class GameList extends StatelessWidget {
   // Constructor with default image
@@ -9,6 +10,7 @@ class GameList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Center(
       // Ensure the column is centered in its parent
       child: Column(
@@ -16,7 +18,8 @@ class GameList extends StatelessWidget {
         children: [
           Expanded(
             child: ListView(
-                children: games.map(_buildItemGameList).toList(),
+              children: games.map((game) => _buildItemGameList(game, 0)).toList(),
+                //children: games.map(_buildItemGameList).toList(),
             ),
           ), // Revisar
           _backButton(context), // Create the button using context
@@ -48,7 +51,7 @@ Widget _backButton(BuildContext context) {
 }
 
 // Function that returns a item GameList
-Widget _buildItemGameList(Game game) {
+Widget _buildItemGameList(Game game, int i) {
   return Column(
     children: [
       ListTile(

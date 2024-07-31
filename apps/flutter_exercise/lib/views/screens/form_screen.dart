@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/views/widgets/login_widgets/login_form.dart';
+import '../widgets/login_widgets/form.dart';
 
 // Create a Form Screen.
 class LoginFormScreen extends StatelessWidget {

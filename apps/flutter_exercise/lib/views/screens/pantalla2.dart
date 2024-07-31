@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/views/widgets/pantalla2_windgets/game_list.dart';
+import '../widgets/pantalla2_windgets/game_list.dart';
+
 
 // Create Pantalla2 Screen
 class Pantalla2 extends StatelessWidget {
